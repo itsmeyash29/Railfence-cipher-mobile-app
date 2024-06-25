@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText for plain text input -->
+    <EditText
+        android:id="@+id/editTextPlainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="top"
+        android:hint="Enter text to encrypt/decrypt"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <!-- EditText for depth input -->
+    <EditText
+        android:id="@+id/editTextDepth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter depth (number of rails)"
+        android:inputType="number"
+        android:maxLength="2"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Encrypt Button -->
+    <Button
+        android:id="@+id/buttonEncrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Decrypt Button -->
+    <Button
+        android:id="@+id/buttonDecrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decrypt"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Copy Text Button -->
+    <Button
+        android:id="@+id/buttonCopyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copy Text"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- TextView for encrypted text label -->
+
+    <!-- TextView for displaying encrypted text result -->
+    <TextView
+        android:id="@+id/textViewEncrypted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Encrypted Text:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- TextView for decrypted text label -->
+    <TextView
+        android:id="@+id/textViewEncryptedResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- TextView for displaying decrypted text result -->
+    <TextView
+        android:id="@+id/textViewDecrypted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Decrypted Text:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewDecryptedResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>
